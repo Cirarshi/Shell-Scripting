@@ -1,0 +1,101 @@
+cat /etc/shells
+- It will let us know which all shells are present in the system
+
+=======================================================================================================================================
+
+echo $0
+- It will tell which is the current running shell on the system.
+
+=======================================================================================================================================
+
+basename
+- strip directory info & gives only filename
+
+dirname
+- strips the filename & gives directory path
+
+realpath
+- gives the full path for a file
+
+=======================================================================================================================================
+
+- To check if file exist
+if [ -f file_name ]
+[ !-f file_name ]
+
+- To check if directory exist
+if [ -d folder_name ]
+[ !-d folder_name ]
+
+=======================================================================================================================================
+
+RANDOM
+- It generate a random integer between 0 & 32767
+Ex: num = $(($RANDOM % 6 + 1))
+
+=======================================================================================================================================
+
+UID
+- user ID of the user logged in
+
+=======================================================================================================================================
+
+/dev/null
+- If output of a command we don't want to write in a file or print on screen
+EX: cd /root &> /dev/null
+
+=======================================================================================================================================
+
+${0}
+- It will print name of current Script
+
+=======================================================================================================================================
+
+/var/logs/messages
+- When we use logger in our script the logs are saved at this location
+
+=======================================================================================================================================
+
+set -x
+- It will enable debugging for the script
+
+set -e
+- To exit script if the command fails
+
+=======================================================================================================================================
+
+nohup
+- To run a script in background
+
+=======================================================================================================================================
+
+at  
+- It is used to schedule a one-time script or command
+Ex: at 12:00 AM
+        <commands OR script>
+    Ctrl+D 
+
+atq
+- It is used to check scheduled job
+
+atrm <job id>
+- To remove the scheduled job
+
+=======================================================================================================================================
+
+CRONTAB
+
+crontab -l 
+- To check existing jobs
+
+crontab -e 
+- To add new job
+
+* * * * *
+1st - mminute (0-59)
+2nd - hour (0-23)
+3rd - day of month (1-31)
+4th - month (1-12)
+5th - day of week (0-6) [Sunday = 0]
+
+=======================================================================================================================================
