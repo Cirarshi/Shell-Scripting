@@ -16,10 +16,6 @@ This repository helps you:
 
 ---
 
-## 📂 Repository Structure
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
