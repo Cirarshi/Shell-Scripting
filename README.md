@@ -61,10 +61,6 @@ chmod +x script_name.sh
 - for loop
 - while loop
 
-### 🔹 Logic Building
-- Even/Odd checker
-- Leap year checker
-
 ---
 
 ## 🛠 Mini Projects
